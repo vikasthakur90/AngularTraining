@@ -1,0 +1,9 @@
+
+    
+<button class="btn btn-success" (click)="toggle()">Display Details</button>
+<p *ngIf="this.n % 2 !=0 && this.n > 0">{{str}}</p>
+<ul *ngIf="this.n>0" style="list-style:none" >
+    <li *ngFor="let i of arr"> 
+      <p [ngStyle]="this.i>4 ? {backgroundColor:getCol()}:{}" [ngClass]="this.i>4 ? getclass():{}">{{ i }}</p>
+    </li>
+</ul>
