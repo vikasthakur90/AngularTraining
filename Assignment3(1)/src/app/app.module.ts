@@ -6,10 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserformsComponent } from './userforms/userforms.component';
 import { FormsModule } from '@angular/forms';
+import { ProjectformComponent } from './projectform/projectform.component';
 @NgModule({
   declarations: [
     AppComponent,
     UserformsComponent,
+    ProjectformComponent,
     
   ],
   imports: [

@@ -13,11 +13,7 @@ export class UserformsComponent implements OnInit {
   constructor(private fb:FormBuilder,private cs:ServiceService) { }
   user:UserForm[] = [];
   userform!:FormGroup;
-  User!:{
-    email:string,
-    subcriptions:string,
-    password:string
-  }[];
+ 
   emailpattern!:"^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
   
   
