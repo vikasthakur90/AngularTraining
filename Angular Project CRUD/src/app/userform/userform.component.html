@@ -1,0 +1,41 @@
+
+<body style="margin-left: 80px;width: 700px;">
+    <div class="form">
+    <form [formGroup]="uform" (ngSubmit)="onSubmit()" class="form form-Group">
+        <div class="col-sm-3">
+        <input class="form-control is-valid" id="name" type="text" placeholder="Enter Name" formControlName = "name" required>
+        <div *ngIf="(uform.controls['name'].touched && uform.controls['name'].invalid) || (!isValid)">
+            <span *ngIf="uform.controls['name'].hasError('required') || !isValid">Required</span>
+            
+            <span *ngIf="uform.controls['name'].hasError('pattern')">only alphabate with
+                space between 2 to 20 charecters
+            </span>
+            
+        </div>
+        
+    </div>
+    <div class="col-sm-3">
+        <input class="form-control" id="mob" type="text" placeholder="Enter Mobile No." formControlName = "mob">
+        <div *ngIf="(uform.controls['mob'].touched && uform.controls['mob'].invalid) || (!isMob)">
+            <span *ngIf="uform.controls['mob'].hasError('required') || !isMob">Required </span>
+            <span *ngIf="uform.controls['mob'].getError?.length">10 Digit</span>
+        </div>
+    </div>
+        <br><br><br>
+        
+        <div class="col-sm-6">
+            <input class="form-control" id="addr" type="text" placeholder="Enter Address" formControlName = "addr">
+            <div *ngIf="(uform.controls['addr'].touched && uform.controls['addr'].invalid) || (!isAdd)">
+            <span *ngIf="uform.controls['addr'].hasError('required') || !isAdd">Required</span>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-sm-6">
+            <input class="form-control" style="background-color:rgb(83 160 83); border-radius: 0.3em; color: white;height: 40px;" type="submit" value="Submit"></div><br>
+            
+            <br>
+        <div class="col-sm-6">
+            <input class="form-control" style="background-color: rgb(248 206 28); border-radius: 0.3em; color: black;height: 40px; margin-top: 10px;" type="button" (click)="onReset()" value="Reset">
+    </div></form>
+</div>
+</body>

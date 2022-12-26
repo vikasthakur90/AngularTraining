@@ -1,0 +1,62 @@
+{
+  "Emp": [
+    {
+      "id": 1,
+      "name": "Vikas Thakur",
+      "mob": "9098664517",
+      "addr": "Ujjain"
+    },
+    {
+      "id": 2,
+      "name": "Akash",
+      "mob": "7777777775",
+      "addr": "Dewas"
+    },
+    {
+      "id": 3,
+      "name": "Abhishek",
+      "addr": "Bhopal",
+      "mob": "1234554321"
+    },
+    {
+      "id": 4,
+      "name": "Namrata ",
+      "mob": "1233219090",
+      "addr": "Deharadun"
+    },
+    {
+      "id": 5,
+      "name": "yogesh",
+      "mob": "1234567890",
+      "addr": "palkhan"
+    },
+    {
+      "id": 6,
+      "name": "yogeswari",
+      "mob": "1233219090",
+      "addr": "Ratlam"
+    },
+    {
+      "id": 7,
+      "name": "Junaid",
+      "mob": "8109140470",
+      "addr": "Ujjain"
+    },
+    {
+      "id": 8,
+      "name": "Meet",
+      "mob": "6789067890",
+      "addr": "MUMBAI"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

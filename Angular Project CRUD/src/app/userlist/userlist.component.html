@@ -1,0 +1,23 @@
+<div class="list">
+<table class = "table table-striped" style="margin-left: 50px;">
+    <tbody>
+    <tr>
+        <th>Id</th>
+        <th>Employee Name</th>
+        <th>Employee Mobile</th>
+        <th>Employee Address</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+   
+        <tr *ngFor="let u of user">
+        <td>{{u.id}}</td>
+        <td>{{u.name}}</td>
+        <td>{{u.mob}}</td>
+        <td>{{u.addr}}</td>
+        <td><button (click)="getsingle(u.id)"><span class="glyphicon glyphicon-pencil"></span></button></td>
+        <td><button (click)="delete(u.id)"><span class="glyphicon glyphicon-trash"></span></button></td>
+        </tr>
+    </tbody>
+</table>
+</div>

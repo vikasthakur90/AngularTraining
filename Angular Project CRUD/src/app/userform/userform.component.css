@@ -1,0 +1,21 @@
+.form{
+    border: black;
+    padding: 5px;
+    
+    height: 220px;
+    width: 770px;
+}
+input{
+    margin-right: 5px;
+}
+span{
+    color: red;
+    font-size: small;
+}
+input[type="text"]:hover{
+    border:1px solid black;
+    background-color:rgb(211, 211, 211);
+}
+/* input[type = "text"]{
+    box-shadow: 5px 10px;
+} */
